@@ -1,11 +1,20 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title>test</title>
     <link rel="stylesheet" href="sample.css">
+    <!-- ▼CSS 1 -->
+    <link href="phone.css" rel="stylesheet" type="text/css"
+          media="(max-width: 599px)">
+    <!-- ▼CSS 2 -->
+    <!--<link href="tablet.css" rel="stylesheet" type="text/css"
+          media="(min-width: 600px) and (max-width: 959px)">-->
+    <!-- ▼CSS 3 -->
+    <link href="desktop.css" rel="stylesheet" type="text/css"
+          media="(min-width: 960px)">
 </head>
-<body bgcolor="black" text="#ffffff">
+<body bgcolor="black" text="#ffffff" style="width: 500px;">
     <p class="title" style="font-size: 50px;">タロット占い</p>
 
     <!--<button type="button" id="btn1">jQueryで表示</button>
@@ -20,8 +29,12 @@
         <p>
         <img class="tarot_photo"/>
         <p>
-            <pre><label id="tarot_str" style="font-size: xx-large"></label></pre>
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-            <script type="text/javascript" src="Script1.js"></script>
-    </body>
+            <!--<div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333; border-radius: 10px;">-->
+                <!--<pre><label class id="tarot_str"></label></pre>-->
+                <pre><textarea class="tarot_class" id="tarot_str" name="textarea1" rows="10" cols="55"  style="overflow:hidden" readonly >結果が表示されます。</textarea></pre>
+
+            <!--</div>-->
+                <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                <script type="text/javascript" src="Script1.js"></script>
+</body>
     </html>
