@@ -32,9 +32,9 @@ body {
 }
 
 .tarot_class {
-    font-size: medium;
+    font-size: small;
 }
 
 .tarot_photo {
-    height: auto;
+    height: 80px;
 }
