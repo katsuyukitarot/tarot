@@ -181,7 +181,7 @@ $(function () {
         var num = images[index];
 
         $(".tarot_photo").attr({ 'src': num }); // div領域を隠す
-        $(".tarot_class").text(str[index]); // div領域を隠す
+        $("#tarot_text").text(str[index]); // div領域を隠す
 
     });
 
