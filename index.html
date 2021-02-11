@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>タロット占い</title>
+
     <link rel="stylesheet" href="sample.css">
     <!-- ▼CSS 1 -->
     <link href="phone.css" rel="stylesheet" type="text/css"
@@ -14,25 +15,37 @@
     <link href="desktop.css" rel="stylesheet" type="text/css"
           media="(min-width: 960px)">
 </head>
-<body bgcolor="black" text="#ffffff" style="width: 500px;">
-    <!--<p class="title" style="font-size: 50px;">タロット占い</p>-->
-    <label class="title" style="font-size: 50px;">タロット占い&nbsp;&nbsp;</label>
-    <button type="button" id="btn3" style="width: 30%; padding: 10px; font-size:30px;">占う</button>
+<body bgcolor="black" text="#ffffff" style="">
+    <!--<body bgcolor="black" text="#ffffff" style="width: 500px;">-->
+        <!--<p class="title" style="font-size: 50px;">タロット占い</p>-->
+        <p>
+            <label class="title" style="font-size: 50px;">タロット占い&nbsp;&nbsp;</label>
+            <button type="button" id="btn3" style="width: 30%; padding: 10px; font-size:30px;">占う</button>
+        </p>
+        <hr width="100%">
 
-    <table border="0" width="100%">
-        <tr>
-            <td width="100%">
-                <img class="tarot_photo" />
-            </td>
-        </tr>
-        <tr>
-            <td width="100%">
-                <label class="tarot_class" id="tarot_text"/>
-            </td>
-        </tr>
-    </table>
+        <table border="1" width="100%">
+            <tr>
+                <th bgcolor="#f5f5dc" align="center" width="15%" class="tarot_class"><font color="black">カード名称</font></th>
+                <th bgcolor="#f5f5dc" align="center" width="15%" class="tarot_class"><font color="black">キーワード</font></th>
+                <th bgcolor="#f5f5dc" align="center" width="15%" class="tarot_class"><font color="black">カード</font></th>
+                <th bgcolor="#f5f5dc" align="center" width="45%" class="tarot_class"><font color="black">説明</font></th>
+            </tr>
+            <tr>
+                <td width="15%" align="center" class="tarot_class" id="tarot_name"></td>
+                <td width="15%" align="center" class="tarot_class" id="tarot_keyword"></td>
+                <td width="15%" align="center" >
+                    <img class="tarot_photo" />
+                </td>
+                <td width="45%">
+                    <label class="tarot_class" id="tarot_text" />
+                </td>
+</table>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="Script1.js"></script>
-</body>
+        <p>
+            <label class="title" style="font-size: 30px;">※このカードは上下(正位置・逆位置)で意味は変わりません。</label>
+
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script type="text/javascript" src="Script1.js"></script>
+    </body>
     </html>
