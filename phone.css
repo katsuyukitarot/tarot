@@ -32,7 +32,7 @@ body {
 }
 
 .tarot_class {
-    font-size: small;
+    font-size: medium; /* 文字サイズ */
 }
 
 .tarot_photo {
